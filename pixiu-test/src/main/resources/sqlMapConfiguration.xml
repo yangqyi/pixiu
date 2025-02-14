@@ -6,7 +6,7 @@
 <!--1.配置数据库配置信息-->
 <dataSource>
     <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-    <property name="url" value="jdbc:mysql:///zdy_mybatis?useSSL=false&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"></property>
+    <property name="url" value="jdbc:mysql:///pixiu:3306?useSSL=false&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"></property>
     <property name="username" value="root"></property>
     <property name="password" value="root"></property>
 </dataSource>
