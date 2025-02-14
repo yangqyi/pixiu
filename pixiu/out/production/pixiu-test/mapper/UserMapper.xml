@@ -1,0 +1,26 @@
+<mapper namespace="com.itheima.mapper.UserMapper">
+
+    <!--
+        sql语句的唯一标识：StatementId: namespace值.id值
+    -->
+    <!--
+        如果采用mapper代理开发，需要遵循规范
+          namespace的值要和接口的类全路径保持一致
+          id的值要和方法名保持一致
+
+    -->
+    <select id="findAllUser" resultType="com.itheima.pojo.User">
+        select * from user
+    </select>
+
+    <!--
+        User user = new User();
+        user.setId(1);
+        user.setUserName("tom");
+    -->
+    <select id="findOneUser" resultType="com.itheima.pojo.User" parameterType="com.itheima.pojo.User">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+
+
+</mapper>
